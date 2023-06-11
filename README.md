@@ -10,6 +10,7 @@ columnCount=$(( spritesheetWidth / tileSize ))
 numberOfTiles=$(( columnCount * rowCount ))
 tileSizeWithPadding=$((tileSize + 2))
 
+
 for (( i = 0; i < numberOfTiles; i++ )); do
 sprites+=" ./temp/sprite-$i.png"
 spriteBleeds+=" ./temp/sprite-bleed-$i.png"
