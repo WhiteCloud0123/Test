@@ -5,6 +5,8 @@ spritesheetWidth=$4
 spritesheetHeight=$5
 tileSize=$6
 
+
+
 rowCount=$(( spritesheetHeight / tileSize ))
 columnCount=$(( spritesheetWidth / tileSize ))
 numberOfTiles=$(( columnCount * rowCount ))
