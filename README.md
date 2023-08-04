@@ -16,7 +16,7 @@ for (( i = 0; i < numberOfTiles; i++ )); do
 sprites+=" ./temp/sprite-$i.png"
 spriteBleeds+=" ./temp/sprite-bleed-$i.png"
 done
-        
+           
 rm -rf temp
 mkdir temp
 convert -crop "$tileSize"x"$tileSize" "$spritesheetFileName.$spritesheetFileType" ./temp/sprite.png
