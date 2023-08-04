@@ -22,6 +22,6 @@ mkdir temp
 convert -crop "$tileSize"x"$tileSize" "$spritesheetFileName.$spritesheetFileType" ./temp/sprite.png
 convert $sprites -set option:distort:viewport "$tileSizeWithPadding"x"$tileSizeWithPadding"-1-1 -virtual-pixel Edge -filter point -distort SRT 0 +repage ./temp/sprite-bleed.png
 montage $spriteBleeds -tile "$columnCount"x"$rowCount" -geometry "$tileSizeWithPadding"x"$tileSizeWithPadding"-0-0 -background none "$spritesheetFileName$newFileSuffix.$spritesheetFileType"
-rm -rf temp
+rm -rf temp 
        
    
