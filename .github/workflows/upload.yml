@@ -27,8 +27,6 @@ jobs:
 
       - name: Download upload URL
         uses: actions/download-artifact@v2
-        with:
-          name: upload_url
 
       - name: Upload Release Asset
         id: upload_asset
